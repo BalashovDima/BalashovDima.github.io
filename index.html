@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagrange Interpolation</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
+</head>
+<body>
+
+    <div class="root-wrapper">
+        <h2>Lagrange Polynomial Interpolation</h2>
+    
+        <h3>Table of Points</h3>
+        <div id="table-container">
+            <table id="points-table">
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>Y</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-row-button">
+                        <td colspan="2" id="add-new-point">Add new point</td>
+                        <td hidden><input id="x-input" type="number" placeholder="Enter X"></td>
+                        <td hidden><input id="y-input" type="number" placeholder="Enter Y"></td>
+                    </tr>
+
+                    <tr class="base-point-row">
+                        <td>-1</td>
+                        <td>-16</td>
+                    </tr>
+                    <tr class="base-point-row">
+                        <td>0</td>
+                        <td>-7</td>
+                    </tr>
+                    <tr class="base-point-row">
+                        <td>2</td>
+                        <td>-1</td>
+                    </tr>
+                    <tr class="base-point-row">
+                        <td>3</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="text-row-button">
+                        <td colspan="2" id="calc-new">Calculate Y from X</td>
+                        <td hidden><input id="x-calc-y" type="number" placeholder="Enter X"></td>
+                        <td hidden id="calculated-y">___</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    
+    
+        <h3 hidden>Graph of X and Y values</h3>
+        <canvas style="display: none;" id="myChart" width="400" height="200"></canvas>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

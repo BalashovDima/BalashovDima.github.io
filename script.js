@@ -317,6 +317,16 @@ function calculateLagrange(x) {
 //     chart.update();
 // }
 
+function clearTable() {
+    points.length = 0;
+    calculatedPoints.length = 0;
+
+    renderTable('tBody');
+    renderTable('tFoot');
+}
+
+document.getElementById('clear-table').addEventListener('click', clearTable);
+
 function notifyOfControls(event) {
     alert("Use 'Enter' to confirm, 'Esc' to cancel");
 

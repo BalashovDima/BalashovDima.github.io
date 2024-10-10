@@ -19,6 +19,16 @@ body {
     background-color: #fff;
 }
 
+#clear-table {
+    margin-top: -30px;
+    text-align: right;
+    color: rgb(168, 168, 168);
+}
+#clear-table:hover {
+    color: black;
+    cursor: pointer;
+}
+
 h2, h3 {
     text-align: center;
     margin-bottom: 20px;
